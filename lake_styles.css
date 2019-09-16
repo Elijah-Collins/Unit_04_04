@@ -1,0 +1,109 @@
+﻿/*
+   New Perspectives on HTML5 and CSS3, 7th Edition
+   Tutorial 2
+   Case Problem 4
+   
+   Great Lakescape Lodge Style Sheet
+   Author: Elijah Collins
+   Date:   9/16/19
+   
+   Filename: lake_styles.css
+
+*/
+@charset "utf-8";
+@import "lake_layout.css";
+@font-face{
+font-family: champagne;
+src: url(champagne.woff2) format('woff2'),
+    url(champagne.woff) format('woff'),
+    url(champagne.ttf) format('truetype')
+}
+@font-face{
+font-family: DobkinPlain;
+src: url(DobkinPlain.woff2) format('woff2'),
+    url(DobkinPlain.woff) format('woff'),
+    url(DobkinPlain.ttf) format('truetype')   
+}
+/* Web Styles */
+html{
+   background-color: #967bb6;
+}
+body{
+   background-color: blanchedalmond;
+}
+aside > h1{
+   font-family: 'champagne';
+}
+header > nav > ul{
+   background-color: #301934;
+   color: white;
+   text-decoration: none;
+}
+nav a:link, nav a:visited{
+   text-decoration: none;
+   color: white;
+}
+nav a:active, nav a:hover{
+   color: #d4af37;
+   text-decoration: none;
+   opacity: 0.8;
+}
+#leftcol > h1{
+   text-align: center;
+   color: #967bb6;
+   font-family: 'champagne';
+   font-size: 2.5em;
+   margin-top: 2%;
+   margin-bottom: 2%;
+}
+p{
+   font-family: 'DobkinPlain';
+   margin-left: 10px;
+}
+#rightcol{
+   background-color: #734f96;
+   padding-bottom: 2em;
+}
+#rightcol > nav > h2{
+   font-family: 'champagne';
+   text-align: center;
+   font-size: 2em;
+   margin-top: 3%;
+   margin-bottom: 3%;
+}
+#rightcol > nav > ul{
+   text-decoration: none;
+}
+#rightcol a:link, #rightcol a:visited{
+   text-decoration: none;
+   font-size: 1.2em;
+   color: white;
+}
+#rightcol a:active, #rightcol a:hover{
+   color: #d4af37;
+   text-decoration: none;
+   font-size: 1.2em;
+   opacity: 0.8;
+}
+#rightcol > li{
+   list-style-type: upper-alpha;
+}
+footer{
+   color: white;
+   background-color: #301934;
+   font-size: 0.8em;
+   font-family: ;
+   text-align: center;
+   padding-top: 1px;
+   padding-bottom: 1px;
+}
+blockquote{
+   font-family: 'DobkinPlain';
+   font-size: 1.3em;
+}
+#leftcol > aside{
+   background-color: #734f96;
+}
+#leftcol > aside:last-child{
+   background-color: #734f96;
+}
